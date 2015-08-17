@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Add A Book</title>
-</head>
-<body>
-	<h1>Add A Book</h1>
-	<form action="" method="POST">
-		<label for="title">Title</label>
-		<input type="text" id="title" name="title">
-		<label for="author">Author</label>
-		<input type="text" id="author" name="author">
-		<button type="submit">Add</button>
-	</form>
-</body>
+	<head>
+		<title>Add A Book</title>
+		<link rel="stylesheet" href="/static/main.css">
+	</head>
+	<body>
+		<header>
+			<h1>Add A Book</h1>
+			<a href="/">View Books</a>
+		</header>
+		<form action="" method="POST">
+			<fieldset>
+				<label for="title">Title</label>
+				<input type="text" id="title" name="title">
+			</fieldset>
+			<fieldset>
+				<label for="author">Author</label>
+				<input type="text" id="author" name="author">
+			</fieldset>
+			<button type="submit">Add</button>
+		</form>
+	</body>
 </html>

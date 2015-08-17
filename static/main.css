@@ -1,11 +1,23 @@
 body {
 	padding-right: 5%;
 	padding-left: 5%;
-	font-size: 2em;
+	font-size: 2rem;
 }
 
-h1 {
+header {
 	text-align: center;
 	border-bottom: 1px solid black;
 	padding-bottom: 0.5em;
+}
+
+fieldset {
+	border: none;
+}
+
+input {
+	font-size: 1.5rem;
+}
+
+button {
+	font-size: 1.5rem;
 }

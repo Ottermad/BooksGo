@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>My Books</title>
-	<link rel="stylesheet" href="http://localhost:8080/static/main.css">
-</head>
-<body>
-<h1>My Books</h1>
-<ul>
-{{range .}}<li>{{index . "title"}} by {{index . "author"}}</li>{{end}}
-</ul>
-</body>
+	<head>
+		<title>My Books</title>
+		<link rel="stylesheet" href="/static/main.css">
+	</head>
+	<body>
+		<header>
+			<h1>My Books</h1>
+			<a href="/add">Add A Book</a>
+		</header>		
+		<ul>
+			{{range .}}
+				<li>{{index . "title"}} by {{index . "author"}}</li>
+			{{end}}
+		</ul>
+	</body>
 </html>
