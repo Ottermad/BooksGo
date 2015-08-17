@@ -19,6 +19,8 @@ func main() {
 	router.GET("/add", AddBookPageHandler(db, renderer))
 	router.POST("/add", AddBookPostHandler(db, renderer))
 
+	router.ServeFiles("/static/*filepath", http.Dir("static"))
+
 	http.ListenAndServe(":8080", router)
 
 }
