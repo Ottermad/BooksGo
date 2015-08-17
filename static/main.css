@@ -1,3 +1,11 @@
 body {
-	background: blue;
+	padding-right: 5%;
+	padding-left: 5%;
+	font-size: 2em;
+}
+
+h1 {
+	text-align: center;
+	border-bottom: 1px solid black;
+	padding-bottom: 0.5em;
 }
